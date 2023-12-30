@@ -10,3 +10,12 @@
   list-style: none;
 }
 
+.container__menu-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-item {
+  margin-right: 20px;
+  list-style: none;
+}

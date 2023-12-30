@@ -1,29 +1,63 @@
-.container__content{
+body, html {
+  height: 100%;
+  margin: 0;
+}
 
-  width: 100%;
-  height: 100vh;
-
-  margin-top: 20px;
-
+.container__center {
   display: flex;
-  flex-direction: column;
-
   align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
-.content__cover > img{
-  border:5px solid rgb(144, 144, 144);
-  border-radius: 5px;
-  width: 500px;
-  min-width: 500px;
-  height: 300px;
+.container__content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px; /* Ajuste conforme necessário */
+  width: 100%;
 }
 
-.content__description{
-  margin-top: 15px;
+.content__cover {
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  margin-bottom: 20px; /* Ajuste para espaço entre a imagem e o título/descrição */
 }
 
-.content__description > p{
-  margin-top: 20px;
-  color: rgb(198, 197, 197);
+.content__cover img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adiciona borda arredondada à imagem */
+}
+
+.content__title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+hr {
+  width: 50px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+.content__description {
+  text-align: justify;
+  text-align-last: left;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.back {
+  padding-top: 10px;
+  text-align: center;
 }
